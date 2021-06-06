@@ -9,6 +9,7 @@ Original file is located at
 
 import tensorflow as tf
 from keras.layers import Conv2D,BatchNormalization,Activation,MaxPooling2D,AveragePooling2D
+from keras.initializers import glorot_uniform
 
 def identity_block(x,f,filters):
   F1,F2,F3 = filters
